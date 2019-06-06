@@ -1,33 +1,229 @@
-.App {
+body {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-bottom: 10rem;
+  min-height: 100%;
+  font-family: 'Special Elite', monospace;
+  background:#FBF0D9;
+  color:#5F4B32;
+}
+
+a {
+  color: #5F4B32;
+  text-decoration: none;
+}
+
+#CROAK {
+  max-width: 1139px;
+  margin: auto;
+}
+
+.frog {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.frog_transparent {
+  position: relative;
+  opacity: 0.1;
+}
+
+#FROG {
+  max-width: 100%;
+}
+
+.heading {
+  font-size: 2.8rem;
+  letter-spacing: -.1rem;
+  margin: 3rem;
+}
+
+.instructions {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.username_instructions{
+  font-size: 1.5rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.brief_instructions{
+  font-size: 1.5rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  text-align: left;
+  transform: translate(-50%,-50%);
+}
+
+.instructions_red {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  color: #ED0000;
+}
+
+.thank_you {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.thank_you_letter {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.user_tip {
+  font-size: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.new_tip {
+  padding-top: 1rem;
+  font-size: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.new_tip_textarea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'Special Elite', monospace;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+.new_tip_link {
+  font-size:2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.new_tip_link_div {
+  margin: auto;
+  text-align: center;
+}
+
+.new_user_input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'Special Elite', monospace;
+  font-size: 1.5rem;
+}
+
+.email_input {
+  display: none;
+}
+
+.tip {
+  padding-top: 1rem;
+}
+
+.tip_id {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.tip_text {
+  padding-top: .5rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.tip_composition_instructions {
+  font-size: 1.5rem;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#LINKABLES {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  visibility: visible;
+}
+
+.CLICKABLES {
+  display: inline-block;
+  text-align: center;
+  font-size: 0.71em;
+  list-style: none;
+  padding: 2em;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.CLICKABLES LI {
+  display: inline;
+}
+
+.CLICKABLES LI:after {
+  color: #5F4B32;
+  content: ' ';
+  display: inline;
+  padding: 0.5em;
+}
+
+.CLICKABLES LI:last-of-type:after {
+  content: '';
+}
+
+.buttons {
+  margin: auto;
+  width: 205px;
+}
+
+.ok_button {
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #75ED61;
+  color: #FFFFFF;
+  width: 100px;
+  height: 25px;
+  padding-top: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cancel_button {
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #ED0000;
+  color: #FFFFFF;
+  width: 100px;
+  height: 25px;
+  padding-top: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.ok_button_disabled {
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #75ED61;
+  color: #FFFFFF;
+  width: 100px;
+  height: 25px;
+  padding-top: 10px;
+  font-size: 1rem;
+  opacity: 0.15;
 }
